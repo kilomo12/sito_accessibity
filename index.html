@@ -31,14 +31,19 @@
                 </ul>
             </nav>
         </header>
-        <form >
-            <input class="bck" id="background" type="text" readonly="readonly">
-            <input class="un" type="button" id="1" value="1">
-            <input class="due" type="button" id="2" value="2">
-            <input class="tre" type="button" id="3" value="3">
-            <input class="quattro" type="button" id="4" value="4">
-            <input class="reset" type="button" id="reset" value="Reset">
+        <form aria-labelledby="form-title">
+            <h2 id="form-title">Seleziona un numero</h2>
+
+            <label for="background" class="visually-hidden">Valore selezionato</label>
+            <input class="bck" id="background" type="text" readonly aria-readonly="true" aria-label="Valore selezionato">
+
+            <button class="un" type="button" id="1" aria-label="Numero 1">1</button>
+            <button class="due" type="button" id="2" aria-label="Numero 2">2</button>
+            <button class="tre" type="button" id="3" aria-label="Numero 3">3</button>
+            <button class="quattro" type="button" id="4" aria-label="Numero 4">4</button>
+            <button class="reset" type="button" id="reset" aria-label="Resetta il modulo">Reset</button>
         </form>
+
         <div id="gruppo" class="gruppo">
             <div class="premier">
                 <h1>Scopri il mio Paese</h1>

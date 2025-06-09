@@ -1,0 +1,293 @@
+/* Regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Stile del logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+/* Stile del titolo */
+.titolo p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Stile del menu di navigazione */
+header nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+}
+
+header nav ul li a:hover {
+    background-color: #007BFF;
+    border-radius: 5px;
+}
+
+/* Submenu */
+#submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header nav ul li:hover #submenu {
+    display: block;
+}
+
+#submenu li a {
+    font-size: 14px;
+}
+
+/* Stile del pulsante mappa */
+.button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button h2 {
+    font-size: 1.8rem;
+    color: #007BFF;
+}
+
+.button ul {
+    margin: 20px 0;
+    text-align: left;
+}
+
+.button ul li {
+    margin-bottom: 10px;
+}
+
+.map {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+	text-align: center;
+}
+
+.map:hover {
+    background-color: #0056b3;
+}
+
+/* Box delle mappe e città */
+.gruppo {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+	text-align: center;
+}
+
+.box {
+    text-align: center;
+}
+/* Classe che attiva la visualizzazione dell'elemento */
+.attivare {
+    display: block; /* Mostra l'elemento */
+    visibility: visible; /* Assicura che sia visibile */
+    opacity: 1; /* Imposta l'opacità completa */
+    transition: opacity 0.5s ease-in-out; /* Aggiunge una transizione per un effetto graduale */
+}
+
+/* Classe che disattiva la visualizzazione dell'elemento */
+.disattivare {
+    display: none; /* Nasconde l'elemento completamente */
+    visibility: hidden; /* Assicura che non sia visibile */
+    opacity: 0; /* Opacità a 0 per nasconderlo gradualmente se serve */
+    transition: opacity 0.5s ease-in-out; /* Effetto graduale se si attiva/disattiva */
+}
+
+a img{
+	width: 100px;
+	height: 100px;
+}
+
+.citta {
+    margin-top: 20px;
+}
+
+.citta h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.citta ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.citta ul li img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+
+.citta ul li a {
+    font-size: 1.2rem;
+    color: #007BFF;
+}
+
+.citta ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Mappa interattiva */
+.map_imagina {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.map_imagina img {
+    max-width: 600px;
+    border: 2px solid #007BFF;
+}
+
+map area {
+    cursor: pointer;
+}
+
+/* Stile del footer */
+/* Footer */
+footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 20px;
+}
+  
+footer p {
+	margin-bottom: 15px;
+	font-size: 0.9em;
+}
+  
+footer a {
+	color: #0056b3;
+	text-decoration: none;
+}
+  
+footer a:hover {
+	text-decoration: underline;
+}
+  
+  /* Icone social */
+.Contatti {
+	margin-top: 10px;
+}
+  
+.Contatti a {
+	display: inline-block;
+	margin: 0 10px;
+}
+  
+.Contatti img {
+	width: 30px;
+	height: auto;
+	transition: transform 0.3s ease;
+}
+  
+.Contatti img:hover {
+    transform: scale(1.1);
+}
+
+/* Media queries per schermi piccoli */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .gruppo {
+        flex-direction: column;
+    }
+
+    .box {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .titolo p {
+        font-size: 1.8rem;
+    }
+
+    .button h2 {
+        font-size: 1.5rem;
+    }
+
+    .map_imagina img {
+        max-width: 100%;
+    }
+
+    .citta ul li img {
+        max-width: 40px;
+    }
+
+    footer a.adress {
+        display: block;
+        margin-top: 10px;
+    }
+	footer p {
+		font-size: 0.7em;
+	}
+  
+	.Contatti img {
+		width: 25px;
+	}
+}

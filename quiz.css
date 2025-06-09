@@ -1,0 +1,228 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Titolo */
+.titolo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Header e menu di navigazione */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Submenu */
+#submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover #submenu {
+    display: block;
+}
+
+#submenu li {
+    display: block;
+    margin: 5px 0;
+}
+
+#submenu li a {
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+/* Sezione Quiz */
+.quiz {
+    margin: 20px auto;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px; /* Limita la larghezza massima */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.numeroDomanda {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.test_domanda {
+    display: block;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.test_risposte {
+    margin-left: 10px;
+}
+
+.btn {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #007bff;
+}
+
+/* Congratulazioni */
+.congratulazioni {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Icone social */
+.Contatti {
+    margin-top: 10px;
+}
+
+.Contatti a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.Contatti img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Contatti img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+/* Tablet - Larghezza massima di 768px */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    .quiz {
+        width: 90%; /* Aumenta la larghezza per tablet */
+    }
+
+    .titolo {
+        font-size: 1.5em;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Smartphone - Larghezza massima di 480px */
+@media screen and (max-width: 480px) {
+    .titolo {
+        font-size: 1.3em;
+        padding: 8px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .quiz {
+        width: 100%; /* Occupare il 100% della larghezza */
+        padding: 15px; /* Ridurre il padding */
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+
+    .Contatti img {
+        width: 25px; /* Ridurre la dimensione delle icone */
+    }
+}

@@ -1,0 +1,199 @@
+/* Regole generali */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #007BFF;
+}
+
+/* Stile del logo */
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+/* Stile del titolo */
+.titolo p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Stile della navigazione */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #333;
+}
+
+header nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+header nav ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+    font-size: 18px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+#submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    padding: 10px 0;
+}
+
+header nav ul li:hover #submenu {
+    display: block;
+}
+
+#submenu li {
+    margin: 0;
+}
+
+#submenu li a {
+    color: white;
+    font-size: 14px;
+}
+
+/* Stile della sezione About */
+.About {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.About h1, .About h2, .About h3 {
+    margin: 20px 0;
+}
+
+.About p {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.About span {
+    color: #007BFF;
+    font-weight: bold;
+}
+
+blockquote {
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 5px solid #007BFF;
+}
+
+blockquote ul {
+    margin-top: 10px;
+}
+
+blockquote ul li {
+    list-style: circle;
+    margin-left: 20px;
+}
+
+blockquote a {
+    color: #007BFF;
+}
+
+/* Stile per i validator */
+.validator {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.validator img {
+    max-width: 100px;
+}
+
+/* Stile del footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #007BFF;
+}
+
+.Contact {
+    margin-top: 20px;
+}
+
+.Contact img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    .About {
+        text-align: center;
+    }
+
+    .validator {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .validator img {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .titolo p {
+        font-size: 1.5rem;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .About p {
+        font-size: 1rem;
+    }
+
+    .Contact img {
+        width: 25px;
+    }
+}

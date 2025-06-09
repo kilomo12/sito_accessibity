@@ -1,0 +1,281 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Titolo */
+.titolo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Header e menu di navigazione */
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+/* Submenu */
+#submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover #submenu {
+    display: block;
+}
+
+#submenu li {
+    display: block;
+    margin: 5px 0;
+}
+
+#submenu li a {
+    padding: 5px;
+    font-size: 0.9em;
+}
+
+/* Tabella dei contenuti */
+#tabella {
+    margin: 20px 0;
+}
+
+#tabella h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#tabella ul {
+    list-style: none;
+}
+
+#tabella ul li {
+    margin: 5px 0;
+}
+
+/* Sezione Linguistica */
+.deuxieme {
+    margin-bottom: 20px;
+}
+
+.deuxieme table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.deuxieme th, .deuxieme td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+.deuxieme th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Playlist */
+#playlist {
+    margin: 20px 0;
+}
+
+.playlist {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.artisti {
+    text-align: center;
+    margin: 10px;
+}
+
+.artisti img {
+    width: 100px;
+    height: auto;
+}
+
+.desc {
+    margin-top: 5px;
+}
+
+/* Sezione Basketball */
+.basketball {
+    margin-top: 20px;
+}
+
+.basketball h2 {
+    font-size: 1.5em;
+}
+
+.basketball p {
+    margin: 10px 0;
+}
+
+/* Video */
+.my_video {
+    margin-top: 20px;
+}
+
+.my_video ol {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.my_video li {
+    margin: 5px 0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Icone social */
+.Contact {
+    margin-top: 10px;
+}
+
+.Contact a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.Contact img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Contact img:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries */
+/* Tablet - Larghezza massima di 768px */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul {
+        text-align: left;
+    }
+
+    .playlist {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artisti {
+        width: 80%;
+    }
+
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Smartphone - Larghezza massima di 480px */
+@media screen and (max-width: 480px) {
+    .titolo {
+        font-size: 1.5em;
+        padding: 8px 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 5px;
+    }
+
+    .playlist {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artisti {
+        width: 100%;
+    }
+
+    footer p {
+        font-size: 0.7em;
+    }
+
+    .Contact img {
+        width: 25px;
+    }
+}

@@ -379,7 +379,7 @@ footer p {
 	font-variant: small-caps;
 }
 footer p a:hover{
-    color: chocolate;
+    color: rgb(31, 82, 225);
 }
 .facebook:hover{
 	transform: rotate(0.5turn);

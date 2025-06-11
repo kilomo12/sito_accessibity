@@ -129,11 +129,11 @@ visibility: visible;
 	border-radius: 25px;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: white;
+	color: rgb(0, 0, 0);
 	padding: 10px;
 	margin: 5px;
 	font-weight: bold;
-	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	background: rgb(186, 186, 217);
 	font-size: 24px;
 	height: auto;
 	box-sizing: border-box;
@@ -148,107 +148,107 @@ visibility: visible;
 	.premier{
 		width: 50%;
 	}
+}
+@media only screen and (max-width:500px) {
+	/* For mobile phones: */
+	.premier, .gruppo{
+		width: 80%;
 	}
+}
 @media only screen and (max-width:500px) {
-		/* For mobile phones: */
-		.premier, .gruppo{
-		  width: 80%;
-		}
-	  }
+	/* For mobile phones: */
+	.titolo {
+		width: 100%;
+	}
+}
 @media only screen and (max-width:500px) {
-		/* For mobile phones: */
-		 .titolo {
-		  width: 100%;
-		}
-	  }
-@media only screen and (max-width:500px) {
-		/* For mobile phones: */
-		nav {
-		  width: 110%;
-		}
-	  }
+	/* For mobile phones: */
+	nav {
+		width: 110%;
+	}
+}
 @media screen  and (max-width:1200px){
-		.gruppo{
-			width: 100%;
-		}
-		}
+	.gruppo{
+		width: 100%;
+	}
+}
 @media screen  and (max-width:1024px){
 	.gruppo{
 		width: 100%;
 	}
 }
 @media screen  and (max-width:600px){
-			.gruppo{
-				background: 100%;
-				width: 90%;
-	     }
-		form{
-				width: 100%	;
-			}
-		}
-@media screen  and (max-width:500px){
-		.gruppo{
- 		background: 100%;
+	.gruppo{
+		background: 100%;
 		width: 90%;
-	     }
-		form{
-				width: 100%	;
-			}
-		}
+	}
+	form{
+		width: 100%	;
+	}
+}
+@media screen  and (max-width:500px){
+	.gruppo{
+ 	    background: 100%;
+		width: 90%;
+	}
+	form{
+		width: 100%	;
+	}
+}
 @media screen  and (max-width:480px){
-			.gruppo{
-				background: 100%;
-				width: 75%;
-	     }
-		 .premier{
-			width: 70%;
-		 }
-		 .click{
-			width: 55%;
-		 }
-		form{
-				width: 100%;	
-			}
-		form input.bck{
-			display: none;
+	.gruppo{
+		background: 100%;
+		width: 75%;
+	}
+	.premier{
+		width: 70%;
+	}
+	.click{
+		width: 55%;
 		}
-		form input.reset{
-			display: none;
+	form{
+		width: 100%;	
 		}
-		footer{
-			font-size: 12px;
-			line-height: 14px;
-		}
-		header nav ul li a{
-            padding: 0 10px;
-			font-size: 23px;
-		}
-		}
+	form input.bck{
+		display: none;
+	}
+	form input.reset{
+		display: none;
+	}
+	footer{
+		font-size: 12px;
+		line-height: 14px;
+	}
+	header nav ul li a{
+        padding: 0 10px;
+		font-size: 23px;
+	}
+}
 @media screen  and (max-width:320px){
-			.gruppo{
-				background: 100%;
-				width: 70%;
-	     }
-		 .premier{
-			width: 60%;
-		 }
-		 .click{
-			width: 50%;
-		 }
-		form{
-				width: 100%;
-			}
-		form input.bck{
-				display: none;
-			}
-		form input.reset{
-				display: none;
-			}
-		header nav ul li a{
-				padding: 0 10px;
-				font-size: 17px;
-			}
-		}
+	.gruppo{
+		background: 100%;
+		width: 70%;
+	}
+	.premier{
+		width: 60%;
+	}
+	.click{
+		width: 50%;
+	}
+	form{
+		width: 100%;
+	}
+	form input.bck{
+		display: none;
+	}
+	form input.reset{
+		display: none;
+	}
+	header nav ul li a{
+		padding: 0 10px;
+		font-size: 17px;
+	}
+}
 /*responsive*/
 .gruppo{
     border: 1px solid rgb(231, 68, 68);

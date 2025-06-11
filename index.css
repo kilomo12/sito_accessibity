@@ -140,7 +140,7 @@ visibility: visible;
 	transition: 0.4s;
 }
 .click:hover{
-    background: white;
+    background: rgb(206, 223, 242);
 }
 /*contenuto*/
 /* responsive*/
